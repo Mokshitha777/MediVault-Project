@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediVault - Digital Health Records</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Login Page -->
+    <div id="loginContainer" class="login-box">
+        <h2>MediVault Login</h2>
+        <input id="username" type="text" placeholder="Username">
+        <input id="password" type="password" placeholder="Password">
+        <button onclick="login()">Login</button>
+    </div>
+
+    <!-- Records Management -->
+    <div id="recordsContainer" class="hidden">
+        <div class="header">
+            <h2>MediVault - Health Records</h2>
+            <button onclick="logout()" class="logout-btn">Logout</button>
+        </div>
+
+        <!-- Add Record Form -->
+        <div class="form-box">
+            <h3>Add New Record</h3>
+            <input id="patientName" type="text" placeholder="Patient Name">
+            <textarea id="medicalHistory" placeholder="Medical History"></textarea>
+            <input id="prescriptionFile" type="file">
+            <button onclick="saveRecord()">Save Record</button>
+        </div>
+
+        <!-- Search Bar -->
+        <input id="search" type="text" onkeyup="searchRecords()" placeholder="Search Records..." class="search-bar">
+
+        <!-- Records List -->
+        <div id="recordsList" class="records-container"></div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

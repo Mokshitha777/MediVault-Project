@@ -1,0 +1,144 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #E3FCEF;  /* Light Green for Health */
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Login Box */
+.login-box {
+    width: 300px;
+    padding: 20px;
+    background-color: #00897B;  /* Teal Blue */
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 137, 123, 0.5);
+    margin: 100px auto;
+    color: white;
+}
+
+.login-box input {
+    width: 100%;
+    padding: 9px;
+    margin: 10px 0;
+    background: white;
+    border: 1px solid #00897B;
+    border-radius: 5px;
+    color: #333;
+}
+
+.login-box button {
+    width: 100%;
+    padding: 10px;
+    background: #004D40;  /* Darker Teal */
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login-box button:hover {
+    background: #00251A;
+}
+
+/* Records Container */
+.hidden {
+    display: none;
+}
+
+.records-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+}
+
+/* Record Cards */
+.record-card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    width: 280px;
+    box-shadow: 0px 0px 10px rgba(0, 137, 123, 0.5);
+    border-left: 5px solid #00897B;
+}
+
+.record-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.record-card button {
+    background: #E74C3C;  /* Red for Delete */
+    border: none;
+    padding: 8px 15px;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.record-card button:hover {
+    background: #C0392B;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background: #00897B;
+    align-items: center;
+    color: white;
+}
+
+.logout-btn {
+    background: #E74C3C;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.logout-btn:hover {
+    background: #C0392B;
+}
+
+/* Form */
+.form-box {
+    width: 80%;
+    max-width: 400px;
+    background: white;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 137, 123, 0.5);
+}
+
+.form-box input, .form-box textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    background: #F8F9FA;
+    border: 1px solid #00897B;
+    border-radius: 5px;
+    color: #333;
+}
+
+/* Search Bar */
+.search-bar {
+    width: 80%;
+    max-width: 400px;
+    padding: 10px;
+    margin: 10px;
+    background: white;
+    border: 1px solid #00897B;
+    border-radius: 5px;
+    color: #333;
+}
